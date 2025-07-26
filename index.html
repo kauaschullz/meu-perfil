@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de [Seu Nome]</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h1>Kauã Schulz</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#sobre" class="nav-item">Sobre</a></li>
+          <li><a href="#habilidades" class="nav-item">Habilidades</a></li>
+          <li><a href="#projetos" class="nav-item">Projetos</a></li>
+          <li><a href="#contato" class="nav-item">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="toggle-menu">☰</div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="about">
+          <img src="F330B0EF-B0D7-4ED5-A0D3-FB060C0638C9.JPG" alt="Foto de [Seu Nome]" class="about-img">
+          <div class="about-text">
+            <h2>Sobre Mim</h2>
+            <p>Sou Kauã, tenho 18 anos e atualmente curso Engenharia de Software. Desde cedo, sou movido pela curiosidade de entender como a tecnologia funciona e por que cada componente age da forma que age. Estou sempre em busca de novos desafios que me permitam aprender e contribuir para a criação de softwares cada vez mais eficientes e centrados no usuário.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="habilidades" class="section bg-light">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-box">HTML5</div>
+          <div class="skill-box">CSS3</div>
+          <div class="skill-box">JavaScript</div>
+          <div class="skill-box">Python</div>
+          <div class="skill-box">SQL</div>
+          <div class="skill-box">React</div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+           
+            <h3>Projeto 1</h3>
+            <p>Por enquanto não tenho projetos em andamento</p>
+            <a href="#" class="btn btn-primary">Ver Projeto</a>
+          </article>
+          <article class="project-card">
+
+            <h3>Projeto 2</h3>
+            <p>Projetos serão atualizados aqui futuramente</p>
+            <a href="#" class="btn btn-primary">Ver Projeto</a>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contato" class="section bg-light">
+      <div class="container">
+        <h2>Contato</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Seu Nome" required>
+          <input type="email" placeholder="Seu Email" required>
+          <textarea rows="4" placeholder="Sua Mensagem..." required></textarea>
+          <button type="submit" class="btn btn-secondary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        
+    </div>
+  </footer>
+
+  <script>
+   
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    const toggle = document.getElementById('toggle-menu');
+    const nav = document.querySelector('.nav ul');
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  </script>
+</body>
+</html>
